@@ -1,0 +1,17 @@
+{% extends 'myblog/base.html' %}
+{% block form %}
+<section class="form">
+  <form class="login" action="index.html" method="post">
+    <h2>Log in</h2>
+    <label for="username">
+      Username<br>
+      <input type="text" name="username" id="username" value="">
+    </label>
+    <label for="password">
+      Password<br>
+      <input type="password" name="password" id="password" value="">
+    </label>
+    <input type="submit" name="submit" value="Log in">
+  </form>
+</section>
+{% endblock %}

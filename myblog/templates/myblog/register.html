@@ -1,0 +1,27 @@
+{% extends 'myblog/base.html' %}
+{% block form %}
+<section class="form">
+  <form class="registration" method="post">
+    <h2>Sign up</h2>
+    <label for="username">
+      Username<br>
+      <input type="text" name="username" id="username" value="" onChange="checkUsername();">
+    </label>
+    <label for="password">
+      Password<br>
+      <input type="password" name="password" id="password" value="">
+    </label>
+    <label for="password2">
+      Confirm password<br>
+      <input type="password" name="" id="password2" value="" onChange="checkPasswordMatch();">
+      <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
+    </label>
+
+    <label for="email">
+      E-mail<br>
+      <input type="text" name="email" id="email" value="" onChange="checkEmail();">
+    </label>
+    <input type="submit" name="submit" value="Sign up">
+  </form>
+</section>
+{% endblock %}
