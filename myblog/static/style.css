@@ -13,13 +13,15 @@ header {
   border-bottom: 1px solid silver;
 }
 
-header a,:visited,:active {
-  margin: 5px;
-  text-decoration: none;
+header a {
+    margin: 4px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header a:visited,:active {
   color: black;
-  font-size: 20px;
-  /* border-bottom: 1px solid white; */
-  transition: 0.5s;
+
 }
 
 header a:hover {
@@ -29,7 +31,6 @@ header a:hover {
 section.articles {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
-  /* grid-template-rows: 40%; */
 }
 
 article {
@@ -38,19 +39,15 @@ article {
 }
 
 article a {
-  /* transition: 0.5s; */
   text-decoration: none;
+  color: black;
 }
-
-
-
 
 article h2 {
   padding: 10px;
   margin: 0 0 10px 0;
   font-size: 30px;
   letter-spacing: 2px;
-  /* background: red; */
   width: 50%;
   transition: 0.5s;
 }
@@ -60,7 +57,6 @@ article h2:hover {
 }
 
 article h3 {
-  /* background: blue; */
   margin: 20px 0 0 0;
 }
 
@@ -73,9 +69,7 @@ section.form {
 }
 
 section.form form.registration,.login {
-  /* -webkit-box-shadow: -1px 0px 107px -33px rgba(94,94,94,1);
-  -moz-box-shadow: -1px 0px 107px -33px rgba(94,94,94,1);
-  box-shadow: -1px 0px 107px -33px rgba(94,94,94,1); */
+
   padding: 30px;
   margin: 30px 0 30px 20%;
   display: flex;
@@ -84,7 +78,7 @@ section.form form.registration,.login {
   width: 40%;
   border: 1px solid silver;
   border-radius: 20px;
-  /* background: red; */
+
 }
 
 section.form  label {

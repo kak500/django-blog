@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 posts = [
     {
@@ -25,7 +26,7 @@ posts = [
 # Create your views here.
 def index(request):
     context = {
-    'posts': posts
+    'posts': Post.objects.all()
     }
     return render(request, 'myblog/index.html', context)
 
